@@ -34,7 +34,7 @@ retry_download() {
 }
 
 install_telegram(){
-    echo "install telegram bot"
+    echo "Install telegram bot Aryo Brokolly"
     clear
     echo "Downloading files from repo.."
     
@@ -72,8 +72,8 @@ download_files() {
 }
 
 echo ""
-echo "Install Telegram BOT."
-read -p "Do you want to install telegram bot (y/n)? " yn
+echo "Install Telegram BOT Aryo Brokolly"
+read -p "Sudah punya telegram bot (y/n)? " yn
 case $yn in
     [Yy]* ) install_telegram;;
     [Nn]* ) echo "Skipping telegram bot installation...";;
