@@ -5,5 +5,5 @@ bash -c "$(wget -qO - 'https://cdn.jsdelivr.net/gh/aryobrokollyy/aryok@main/sink
 
 Telegram
 ```
-bash -c "$(wget -qO - 'https://cdn.jsdelivr.net/gh/aryobrokollyy/aryok@main/detektor.sh')"
+bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokollyy/aryok/refs/heads/main/detektor.sh')"
 ```
