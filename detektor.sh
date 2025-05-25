@@ -70,7 +70,7 @@ download_files() {
     
     finish
 }
-
+clear
 echo ""
 echo "Install Deteksi Monitor Wifi Openwrt"
 echo "Script ini berfungsi meneruskan informasi perangkat baru yang terkoneksi di OPENWRT kita."
