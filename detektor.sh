@@ -72,7 +72,11 @@ download_files() {
 }
 
 echo ""
-echo "Install Telegram BOT Aryo Brokolly"
+echo "Install Deteksi Monitor Wifi Openwrt"
+echo "Script ini berfungsi meneruskan informasi perangkat baru yang terkoneksi di OPENWRT kita."
+echo "Dengan syarat dan ketentuan sesuai Tutorial di YOUTUBE "
+echo "A R Y O    B R O K O L L Y"
+echo ""
 read -p "Sudah punya telegram bot (y/n)? " yn
 case $yn in
     [Yy]* ) install_telegram;;
