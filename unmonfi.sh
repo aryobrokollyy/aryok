@@ -1,0 +1,64 @@
+#!/bin/ash
+# Installation script by ARYO.
+
+DIR=/usr/bin
+CONF=/etc/config
+ETC=/etc/hotplug.d/dhcp
+MODEL=/usr/lib/lua/luci/model/cbi
+CON=/usr/lib/lua/luci/controller
+
+
+uninstall_telegram(){
+    echo "unInstall telegram bot Aryo Brokolly"
+    clear
+    rm $MODEL/telegram_config.lua
+    rm $DIR/telegram
+    rm $CONF/telegram
+    rm $CON/telegram.lua
+    clear
+}
+
+finish(){
+    clear
+    echo ""
+    echo "UNINSTALL SUCCESSFULLY ;)"
+    echo ""
+    sleep 3
+    echo "Youtube : ARYO BROKOLLY"
+    echo ""
+    sleep 5
+    rm unmonfi
+    echo ""
+}
+
+download_files() {
+    clear
+    rm $ETC/99-device-detector
+    finish
+}
+clear
+echo ""
+echo "=============================================================="
+echo "|| UnInstall Deteksi Monitor Wifi Openwrt                    ||"
+echo "|| Script ini akan dihapus di OPENWRT kita.                  ||"
+echo "|| A R Y O    B R O K O L L Y                                ||"
+echo "=============================================================="
+echo ""
+read -p "Hapus Telegram bot (y/n)? " yn
+case $yn in
+    [Yy]* ) uninstall_telegram;;
+    [Nn]* ) echo "Skipping telegram bot uninstall...";;
+    * ) echo "Invalid input. Skipping telegram bot uninstallat...";;
+esac
+
+echo ""
+echo "UnInstall Script Detector Wifi Connect."
+
+while true; do
+    read -p "Do you want to continue (y/n)? " yn
+    case $yn in
+        [Yy]* ) download_files; break;;
+        [Nn]* ) echo "UnInstallation canceled. Ensure you have a stable internet connection before retrying."; exit;;
+        * ) echo "Please answer 'y' or 'n'.";;
+    esac
+done
