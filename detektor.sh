@@ -45,6 +45,8 @@ install_telegram(){
     retry_download "$CONF/telegram" "$URL/etc/config/telegram"
     retry_download "$CON/telegram.lua" "$URL/telegram.lua"
     chmod +x "$CON/telegram.lua"
+    retry_download "$DIR/unmonfi" "$URL/unmonfi.sh"
+    chmod +x "$DIR/unmonfi"
 
     clear
 }
