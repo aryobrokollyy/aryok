@@ -1,6 +1,6 @@
 #!/bin/ash
 # Installation script by ARYO.
-
+CRON_JOB='0 0 * * * truncate -s 0 /root/known_mac.txt && > /tmp/dhcp.leases && /etc/init.d/dnsmasq restart'
 DIR=/usr/bin
 CONF=/etc/config
 ETC=/etc/hotplug.d/dhcp
@@ -60,6 +60,16 @@ install_telegram(){
 
 finish(){
     clear
+    echo "✅ Menambahkan Cronjob."
+    # Cek apakah baris sudah ada di crontab
+    crontab -l 2>/dev/null | grep -F "$CRON_JOB" >/dev/null
+    if [ $? -ne 0 ]; then
+        # Tambahkan baris ke crontab
+        (crontab -l 2>/dev/null; echo "$CRON_JOB") | crontab -
+        echo "✅ Cron job berhasil ditambahkan."
+    else
+        echo "ℹ️ Cron job sudah ada, tidak ditambahkan ulang."
+    fi
     echo ""
     echo "INSTALL SUCCESSFULLY ;)"
     echo ""
