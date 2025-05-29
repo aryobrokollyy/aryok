@@ -65,7 +65,7 @@ finish(){
     echo ""
     sleep 3
     echo "Youtube : ARYO BROKOLLY"
-    echo ""
+    echo "Uninstallnya cukup ketik unmonfi di terminal"
     sleep 5
     echo ""
 }
