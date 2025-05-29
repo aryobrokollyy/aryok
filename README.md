@@ -9,5 +9,5 @@ bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokollyy/aryok/ref
 ```
 Uninstall Telegram bot & Wifi Detector
 ```
-bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokollyy/aryok/refs/heads/main/unmonfi.sh')"
+bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokollyy/aryok/refs/heads/main/unmonfi')"
 ```
