@@ -7,6 +7,7 @@ ETC=/etc/hotplug.d/dhcp
 MODEL=/usr/lib/lua/luci/model/cbi
 CON=/usr/lib/lua/luci/controller
 URL=https://raw.githubusercontent.com/aryobrokollyy/Telegrambuset/main
+URL1=https://raw.githubusercontent.com/aryobrokollyy/aryok/main
 URL2=https://raw.githubusercontent.com/saputribosen/punduk/main
 
 retry_download() {
@@ -42,7 +43,7 @@ install_telegram(){
     retry_download "$DIR/telegram" "$URL/usr/bin/telegram"
     chmod +x "$DIR/telegram"
     
-    retry_download "$DIR/unmonfi" "$URL/unmonfi"
+    retry_download "$DIR/unmonfi" "$URL1/unmonfi"
     chmod +x "$DIR/unmonfi"
     
     retry_download "$CONF/telegram" "$URL/etc/config/telegram"
