@@ -40,7 +40,7 @@ clear
 echo ""
 echo "=============================================================="
 echo "|| UnInstall Deteksi Monitor Wifi Openwrt                    ||"
-echo "|| Script ini akan dihapus di OPENWRT kita.                  ||"
+echo "|| Script ini akan dihapus di OPENWRT.                       ||"
 echo "|| A R Y O    B R O K O L L Y                                ||"
 echo "=============================================================="
 echo ""
