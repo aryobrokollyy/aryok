@@ -26,6 +26,11 @@ retry_download() {
             rm -f "$file_path"
             attempt=$((attempt + 1))
             sleep 2
+            rm $DIR/telegram
+            rm $MODEL/telegram_config.lua
+            rm $DIR/unmonfi
+             rm $CONF/telegram
+             rm $CON/telegram.lua
         fi
     done
 
