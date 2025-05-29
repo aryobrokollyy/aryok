@@ -1,6 +1,6 @@
 #!/bin/ash
 # Installation script by ARYO.
-CRON_JOB='0 0 * * * truncate -s 0 /root/known_mac.txt && > /tmp/dhcp.leases && /etc/init.d/dnsmasq restart'
+CRON_JOB='0 0 * * * truncate -s 0 /tmp/known_mac.txt && > /tmp/dhcp.leases && /etc/init.d/dnsmasq restart'
 DIR=/usr/bin
 CONF=/etc/config
 ETC=/etc/hotplug.d/dhcp
